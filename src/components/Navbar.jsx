@@ -6,7 +6,12 @@ import { AuthContext } from '../context/AuthContext';
 
 const Navbar = () => {
   
-  const {user} = use(AuthContext)
+  const {user,signOutfunc} = use(AuthContext)
+  const handleSignOut=()=>{
+    signOutfunc()
+    .then()
+    .catch()
+  }
     return (
         
             <div className="navbar bg-base-100 shadow-sm">
@@ -26,27 +31,27 @@ const Navbar = () => {
     <img src={logo} alt="" />
   </div>
   
-  <div className="navbar-end">
+  <div className="navbar-center">
     <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 space-x-7">
       
        <li><NavLink to={'/'}>Home</NavLink></li>
-       <li><NavLink to={'register'}>Register</NavLink></li>
-       <li><NavLink to={'login'}>Login</NavLink></li>
-       {user && <div className='mt-2 space-x-3'>
-  <NavLink to={'login'}>Login</NavLink><NavLink to={'register'}>Register</NavLink>
-</div>}
+       
+       {!user && <div className='mt-2 space-x-7'>
+    <NavLink to={'login'}>Login</NavLink><NavLink to={'register'}>Register</NavLink>
+    </div> }
+
        
     </ul>
     
-  </div>
+    </div>
+   </div>
+     {user && <div className='flex navbar-end'>
+      <img src={logo} alt="" />
+      <button className='btn btn-secondary' onClick={handleSignOut}>Logout</button>
 
-   <div className='flex'> 
-    {user&& <p>{user.email}</p>}
-    
-    <img src={logo} alt="" />
-    <a className="btn">Button</a></div>
-  </div>
+     </div>
+  }
 </div>
             
         

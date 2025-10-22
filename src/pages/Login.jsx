@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { AuthContext } from '../context/AuthContext';
 
 const Login = () => {
-  const{ signInWithEmailAndPass,setUser } =  use(AuthContext)
+  const{ signInWithEmailAndPass } =  use(AuthContext)
  
   const handleLogin = (e) =>{
     e.preventDefault()
@@ -11,7 +11,7 @@ const Login = () => {
    const password = e.target.password.value
    signInWithEmailAndPass(email,password)
    .then(res =>{
-    setUser(res.user)
+    console.log(res.user)
 
    })
    .catch(err=>{
