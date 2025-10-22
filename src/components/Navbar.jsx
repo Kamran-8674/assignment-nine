@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import logo from '../assets/logo2_231x.avif'
 import { NavLink } from 'react-router';
 import { AuthContext } from '../context/AuthContext';
+import profile from '../assets/blank-profile-picture-image-holder-with-a-crown-vector-42411540.avif'
 
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
     </div>
    </div>
      {user && <div className='flex navbar-end'>
-      <img src={logo} alt="" />
+      <img width={40} src={profile} alt="" />
       <button className='btn btn-secondary' onClick={handleSignOut}>Logout</button>
 
      </div>
