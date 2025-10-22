@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknown’s Battlegrounds: PUBG",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q4d.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Fortnite",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2t2w.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite/en-US/home",
+    "description": "Fortnite combines building, exploration and combat as you fight to be the last one standing in colorful arenas.",
+    "ratings": "4.3",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "6",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dpq.jpg",
+    "category": "Action RPG / Open World",
+    "downloadLink": "https://www.hoyoverse.com/en/genshin",
+    "description": "Genshin Impact is an open-world action RPG featuring elemental combat, exploration, and a fantasy world full of secrets.",
+    "ratings": "4.6",
+    "developer": "miHoYo"
+  },
+  {
+    "id": "4",
+    "title": "Apex Legends",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r4y.jpg",
+    "category": "Battle Royale / Hero Shooter",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "Apex Legends is a hero-based free-to-play battle royale game featuring squads of fixed characters each with unique abilities.",
+    "ratings": "4.2",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "5",
+    "title": "Overwatch",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20kl.jpg",
+    "category": "Hero Shooter / FPS",
+    "downloadLink": "https://playoverwatch.com",
+    "description": "Overwatch is a team-based shooter where heroes with special powers fight across the globe in dynamic objectives.",
+    "ratings": "4.1",
+    "developer": "Blizzard Entertainment"
+  },
+  
+  
+  {
+    "id": "8",
+    "title": "Minecraft",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2v4s.jpg",
+    "category": "Sandbox / Survival",
+    "downloadLink": "https://www.minecraft.net",
+    "description": "Minecraft lets you build, explore, and survive in a procedurally generated world of blocks, mobs and infinite possibilities.",
+    "ratings": "4.8",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "7",
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vry.jpg",
+    "category": "Action Adventure / Open World",
+    "downloadLink": "https://www.zelda.com/breath‐of‐the‐wild",
+    "description": "Explore a vast open world, solve puzzles, fight enemies and uncover the secrets of Hyrule in Zelda’s acclaimed adventure.",
+    "ratings": "4.9",
+    "developer": "Nintendo"
+  },
+  {
+    "id": "9",
+    "title": "Valorant",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kf8.jpg",
+    "category": "Tactical Shooter / FPS",
+    "downloadLink": "https://playvalorant.com",
+    "description": "Valorant is a competitive tactical shooter where precise aiming, strategy and agent abilities combine for intense rounds.",
+    "ratings": "4.0",
+    "developer": "Riot Games"
+  }
+  
+]
