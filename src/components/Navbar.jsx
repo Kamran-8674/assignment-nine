@@ -1,6 +1,6 @@
 import React, { use } from 'react';
 import logo from '../assets/logo2_231x.avif'
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../context/AuthContext';
 import profile from '../assets/blank-profile-picture-image-holder-with-a-crown-vector-42411540.avif'
 
@@ -38,9 +38,9 @@ const Navbar = () => {
       
        <li><NavLink to={'/'}>Home</NavLink></li>
        
-       {!user && <div className='mt-2 space-x-7'>
+       {!user ? <div className='mt-2 space-x-7'>
     <NavLink to={'login'}>Login</NavLink><NavLink to={'register'}>Register</NavLink>
-    </div> }
+    </div>:<NavLink className='mt-2 space-x-7' to={'profile'}>Profile</NavLink> }
 
        
     </ul>
@@ -48,8 +48,8 @@ const Navbar = () => {
     </div>
    </div>
      {user && <div className='flex navbar-end'>
-      <img width={40} src={profile} alt="" />
-      <button className='btn btn-secondary' onClick={handleSignOut}>Logout</button>
+      <Link to={'/profile'}> <img width={40} src={profile} alt="" /></Link>
+     <button className='btn btn-secondary' onClick={handleSignOut}>Logout</button> 
 
      </div>
   }
