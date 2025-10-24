@@ -5,6 +5,7 @@ import { AuthContext } from '../context/AuthContext';
 const Register = () => {
       const {signUpWithEmailAndPass,profile,signInWithGoogle}=use(AuthContext)
       const navigate = useNavigate()
+      console.log(navigate)
 
      const handleRegister = (e) =>{
       e.preventDefault()
