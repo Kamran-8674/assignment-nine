@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import DetailsCard from "../pages/DetailsCard";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -25,11 +26,11 @@ export const router = createBrowserRouter([
         },
         {
           path:'/profile',
-          element:<Profile></Profile>
+          element:<PrivateRoute><Profile></Profile></PrivateRoute>
         },
         {
           path:'/details/:id',
-          element:<DetailsCard></DetailsCard>
+          element:<PrivateRoute><DetailsCard></DetailsCard></PrivateRoute>
         }
 
     ]

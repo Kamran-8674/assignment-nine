@@ -5,15 +5,19 @@ import { auth } from '../firebase/firebase.init';
 
 const AuthProvider = ({children}) => {
     const [user,setUser] = useState(null)
+    const [loading, setloading]=useState(true)
 
     const signUpWithEmailAndPass = (email,password) =>{
+        setloading(true)
         return createUserWithEmailAndPassword(auth,email,password) 
     }
     const signInWithEmailAndPass= (email,password) =>{
+        setloading(loading)
         return signInWithEmailAndPassword(auth,email,password)
     }
 
     const signOutfunc = () =>{
+        setloading(true)
         return signOut(auth)
     }
     const profile = (displayName,photoURL) =>{
@@ -27,6 +31,7 @@ const AuthProvider = ({children}) => {
     useEffect(()=>{
       const unsuscribed =  onAuthStateChanged(auth,currentUser =>{
             setUser(currentUser)
+            setloading(false)
         })
         return ()=>{
             unsuscribed ()
@@ -40,7 +45,8 @@ const AuthProvider = ({children}) => {
       signUpWithEmailAndPass,
       signInWithEmailAndPass,
       signOutfunc,
-      profile
+      profile,
+      loading
     }
 
     return <AuthContext value={authInfo}>{children}</AuthContext>;
