@@ -7,11 +7,13 @@ import Profile from "../pages/Profile";
 import DetailsCard from "../pages/DetailsCard";
 import PrivateRoute from "./PrivateRoute";
 import ForgetPass from "../pages/ForgetPass";
+import ErrorElement from "../pages/ErrorElement";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement:<ErrorElement></ErrorElement>,
     children:[
         {
             path:'/',
