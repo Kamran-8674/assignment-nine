@@ -8,6 +8,7 @@ import DetailsCard from "../pages/DetailsCard";
 import PrivateRoute from "./PrivateRoute";
 import ForgetPass from "../pages/ForgetPass";
 import ErrorElement from "../pages/ErrorElement";
+import AllGames from "../pages/AllGames";
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +39,11 @@ export const router = createBrowserRouter([
         {
           path:'/forgetPass',
           Component:ForgetPass
+
+        },
+        {
+          path:'allGames',
+          element:<PrivateRoute><AllGames></AllGames></PrivateRoute>
 
         }
 

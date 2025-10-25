@@ -38,6 +38,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1 space-x-7">
       
        <li><NavLink to={'/'}>Home</NavLink></li>
+       <li><NavLink to={'/allGames'}>Games</NavLink></li>
        
        {!user ? <div className='mt-2 space-x-7'>
     <NavLink to={'login'}>Login</NavLink><NavLink to={'register'}>Register</NavLink>

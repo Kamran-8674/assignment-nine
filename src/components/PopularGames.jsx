@@ -1,6 +1,7 @@
 import React from 'react';
 import useGames from '../hooks/useGames';
 import GamesCard from './GamesCard';
+import { Link } from 'react-router';
 
 const PopularGames = () => {
    const {games} =useGames()
@@ -14,7 +15,7 @@ const PopularGames = () => {
          <div className='grid grid-cols-1 md:grid-cols-3 gap-3.5 max-w-[1200px] mx-auto'>
             {slised.map(game=><GamesCard game={game}></GamesCard>)}
         </div>
-        <button className='btn btn-secondary mx-auto flex mt-1 md:w-1/5'>Show All Games</button>
+      <Link to={'/allGames'}>  <button className='btn btn-secondary mx-auto flex mt-1 md:w-1/5'>Show All Games</button></Link>
         </div>
        
     );

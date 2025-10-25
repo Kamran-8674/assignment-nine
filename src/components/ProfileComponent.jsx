@@ -12,7 +12,7 @@ const ProfileComponent = () => {
                  <p>{user.displayName} </p>
                 <h1 className='text-xl font-semibold'>Email</h1>
                 <p className='text-red-400'>{user.email}</p>
-                <button className='btn btn-primary'>Contact Me</button>
+                <button className='btn btn-primary'>Update Profile</button>
             </div>
             <div><img className='rounded-full mt-9 w-2xs' src={user.photoURL} alt="" /></div>
          </div>
